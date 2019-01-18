@@ -1,0 +1,5 @@
+<panel-of-variants [onSelect]="onExampleSelect" [variants]="examples" [selectedVariant]="typeExample"></panel-of-variants>
+<div>
+  <movable-without-protector-example *ngIf="typeExample == 'withoutProtector'"></movable-without-protector-example>
+  <movable-with-protector-example *ngIf="typeExample =='withProtector'"></movable-with-protector-example>
+</div>

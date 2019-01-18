@@ -1,2 +1,2 @@
-export {CoordinatesWrapper} from './CoordinatesWrapper/CoordinatesWrapper';
 export {MovableWrapper} from './MovableWrapper/MovableWrapper';
+export {PanelOfVariants} from './PanelOfVariants/PanelOfVariants';
