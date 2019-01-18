@@ -45,4 +45,24 @@ export class iWrapperService {
         }
       });
   }
+  /** Get position of Element */
+  getPositionElement(element: HTMLElement, parentElement: HTMLElement) {
+    return {
+        top: element.getBoundingClientRect().top - parentElement.getBoundingClientRect().top,
+        left: element.getBoundingClientRect().left - parentElement.getBoundingClientRect().left
+    };
+  }
+  /** Get position of mouse */
+  getPositionOfMouse(event: MouseEvent) {
+    return {
+      top: event.pageY,
+      left: event.pageX
+    };
+  }
+  setCursor(cursorName: 'row-resize' | 'col-resize' | 'nwse-resize' | 'nesw-resize') {
+    document.body.style.cursor = cursorName;
+  }
+  resetCursor() {
+    document.body.style.cursor = 'initial';
+  }
 }

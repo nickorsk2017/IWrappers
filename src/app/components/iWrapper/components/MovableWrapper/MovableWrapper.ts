@@ -52,24 +52,10 @@ export class MovableWrapper {
     this.moveWrapper(dataHandler.event);
   }
   // ======= Events, subscribes[END]. =======
-  /** Get position of Element */
-  getPositionElement(element: HTMLElement = this.hostElement.nativeElement) {
-    const parentElement = this.protectorElement;
-    return {
-        top: element.getBoundingClientRect().top - parentElement.getBoundingClientRect().top,
-        left: element.getBoundingClientRect().left - parentElement.getBoundingClientRect().left
-    };
-  }
   /** Reset start position */
   resetStartPosition() {
     this.deltaPositionOfMouse.topEnd = 0;
     this.deltaPositionOfMouse.leftEnd = 0;
-  }
-  getPositionOfMouse(event: MouseEvent) {
-    return {
-      top: event.pageY,
-      left: event.pageX
-    };
   }
   getStyle(element: HTMLElement, style: string) {
     const styles = window.getComputedStyle(element);
@@ -97,11 +83,11 @@ export class MovableWrapper {
   /** Update position before wrapper moved */
   updatePositionWrapperBeforeMoved() {
     const parentElement = this.hostElement.nativeElement.parentElement || document.body;
-    this.positionBeforeMoved = this.getPositionElement();
+    this.positionBeforeMoved = this.wrapperService.getPositionElement(this.hostElement.nativeElement, this.protectorElement);
   }
   /** Move wrapper */
   moveWrapper(event: MouseEvent) {
-    const mousePosition = this.getPositionOfMouse(event);
+    const mousePosition = this.wrapperService.getPositionOfMouse(event);
     // set position wrapper top
     const topPosition = this.positionBeforeMoved.top + this.deltaPositionOfMouse.topEnd - this.deltaPositionOfMouse.topStart;
     const leftPosition = this.positionBeforeMoved.left + this.deltaPositionOfMouse.leftEnd - this.deltaPositionOfMouse.leftStart;
@@ -145,7 +131,6 @@ export class MovableWrapper {
             this.hostElement.nativeElement.style.top = `${0}px`;
           } else {
             const borderWidth = this.getBordersWidth(this.protectorElement);
-            console.log(borderWidth, 'borderWidth');
             this.hostElement.nativeElement.style.top = `${protectorTop + this.protectorElement.offsetHeight -
               this.hostElement.nativeElement.offsetHeight - borderWidth.borderTop - borderWidth.borderBottom}px`;
           }

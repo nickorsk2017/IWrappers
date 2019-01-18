@@ -1,0 +1,9 @@
+<div (mousedown)="resize($event, 'top')" [ngClass]="{visibleResizePoints: visibleResizePoints}" class="border-resize-top"></div>
+<div (mousedown)="resize($event, 'bottom')" [ngClass]="{visibleResizePoints: visibleResizePoints}" class="border-resize-bottom"></div>
+<div (mousedown)="resize($event, 'left')" [ngClass]="{visibleResizePoints: visibleResizePoints}" class="border-resize-left"></div>
+<div (mousedown)="resize($event, 'right')" [ngClass]="{visibleResizePoints: visibleResizePoints}" class="border-resize-right"></div>
+<div (mousedown)="resize($event, 'top-left')" [ngClass]="{visibleResizePoints: visibleResizePoints}" class="border-resize-top-left"></div>
+<div (mousedown)="resize($event, 'top-right')" [ngClass]="{visibleResizePoints: visibleResizePoints}" class="border-resize-top-right"></div>
+<div (mousedown)="resize($event, 'bottom-left')" [ngClass]="{visibleResizePoints: visibleResizePoints}" class="border-resize-bottom-left"></div>
+<div (mousedown)="resize($event, 'bottom-right')" [ngClass]="{visibleResizePoints: visibleResizePoints}" class="border-resize-bottom-right"></div>
+<ng-content></ng-content>
