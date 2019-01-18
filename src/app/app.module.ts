@@ -5,11 +5,6 @@ import * as Components from './components';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-// reducers and store
-import {StoreModule} from '@ngrx/store';
-import * as Reducers from './store/reducers';
-// services
-import * as Services from './services';
 import {iWrapperModule} from './components/iWrapper/iWrapperModule';
 
 export function createTranslateLoader(http: HttpClient) {
@@ -31,10 +26,8 @@ export function createTranslateLoader(http: HttpClient) {
       }
     }),
     AppRoutingModule,
-    StoreModule.forRoot({...Reducers}),
     iWrapperModule
   ],
-  providers: [Object.keys(Services).map(svc => Services[svc])],
   bootstrap: [Components.App]
 })
 export class AppModule { }
