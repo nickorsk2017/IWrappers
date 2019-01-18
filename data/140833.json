@@ -1,0 +1,211 @@
+{
+  "result": {
+    "retMsg": "GetVodDetail success.",
+    "retCode": "000000000"
+  },
+  "VODDetail": {
+    "rating": {
+      "name": "16+",
+      "ID": "16"
+    },
+    "userScore": "0",
+    "produceDate": "20060101",
+    "isSubscribed": "1",
+    "ID": "140833",
+    "scoreTimes": "1",
+    "contentType": "VIDEO_VOD",
+    "likes": "0",
+    "name": "Гарфилд 2",
+    "subjectIDs": [
+      "packagesforchildren",
+      "moviesnovelties",
+      "moviesall",
+      "MKids",
+      "packagesfvod",
+      "moviescomedies",
+      "AllMovies",
+      "MComedy",
+      "movieschildren"
+    ],
+    "code": "11110000006462",
+    "isLike": "0",
+    "mediaFiles": [
+      {
+        "preview": "0",
+        "isDownload": "1",
+        "code": "140834",
+        "customFields": [],
+        "maxBitrate": "3.711",
+        "bitrate": "3711",
+        "elapseTime": "5145",
+        "multiBitrates": [
+          "3800",
+          "2100",
+          "512"
+        ],
+        "extensionFields": [],
+        "formatOf3D": "1",
+        "encrypt": "0",
+        "uploadType": "0",
+        "definition": "1",
+        "ID": "140834",
+        "dimension": "2",
+        "videoCodec": "H.264",
+        "CGMSA": "0",
+        "fps": "24.0",
+        "macrovision": "0",
+        "supportTerminals": [],
+        "fileSize": "2386636875",
+        "analogOutputEnable": "1",
+        "HDCPEnable": "0",
+        "fileFormat": "4"
+      }
+    ],
+    "averageScore": "9.0",
+    "produceZones": [
+      {
+        "name": "United Kingdom",
+        "ID": "GB"
+      },
+      {
+        "name": "United States",
+        "ID": "US"
+      }
+    ],
+    "genres": [
+      {
+        "genreID": "6",
+        "genreType": "2",
+        "genreName": "Мультфильмы"
+      },
+      {
+        "genreID": "7",
+        "genreType": "2",
+        "genreName": "Комедии"
+      },
+      {
+        "genreID": "14",
+        "genreType": "2",
+        "genreName": "Фэнтези"
+      }
+    ],
+    "castRoles": [
+      {
+        "casts": [
+          {
+            "extensionFields": [],
+            "castID": "15807",
+            "castCode": "15807",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181010/20181010121916364iwz.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Брекин Мейер"
+          },
+          {
+            "extensionFields": [],
+            "castID": "15808",
+            "castCode": "15808",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181010/20181010121956370bew.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Дженнифер Лав Хьюитт"
+          },
+          {
+            "extensionFields": [],
+            "castID": "16684",
+            "castCode": "BillyConnolly",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181012/20181012073006376bzh.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Билли Коннолли"
+          },
+          {
+            "extensionFields": [],
+            "castID": "3351",
+            "castCode": "3351",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181010/20181010114911360hkq.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Билл Мюррей"
+          }
+        ],
+        "roleType": "0"
+      },
+      {
+        "casts": [
+          {
+            "extensionFields": [],
+            "castID": "18036",
+            "castCode": "timhill",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181012/20181012091006369cqy.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Тим Хилл"
+          }
+        ],
+        "roleType": "1"
+      },
+      {
+        "casts": [
+          {
+            "extensionFields": [],
+            "castID": "20249",
+            "castCode": "20249",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181017/20181017131921363mpb.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Гарфилд"
+          }
+        ],
+        "roleType": "100"
+      }
+    ],
+    "introduce": "Любимец всей Америки кот Гарфилд пересекает океан с целью преподнести сюрприз своему хозяину Джону Арбаклу, отправившемуся в Лондон, чтобы сделать предложение своей возлюбленной, ветеринару Лиз Уилсон. Очутившись в Англии, Гарфилд случайно меняется местами со своим двойником — котом Принцем, принадлежащим королевской семье.",
+    "produceZone": {
+      "name": "United Kingdom",
+      "ID": "GB"
+    },
+    "picture": {
+      "hcsSlaveAddrs": [],
+      "posters": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181012/20181012100100977p7b.png"
+      ],
+      "extensionFields": [],
+      "backgrounds": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181012/201810121001009776j5.png"
+      ],
+      "others": []
+    },
+    "VODType": "0"
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "result": {
+    "retMsg": "GetVodDetail success.",
+    "retCode": "000000000"
+  },
+  "VODDetail": {
+    "rating": {
+      "name": "16+",
+      "ID": "16"
+    },
+    "userScore": "0",
+    "produceDate": "20180103",
+    "isSubscribed": "0",
+    "ID": "5137",
+    "scoreTimes": "7",
+    "contentType": "VIDEO_VOD",
+    "likes": "0",
+    "name": "Астрал 4: Последний ключ",
+    "favorite": {
+      "collectTime": "1544189331000",
+      "catalogID": "-1",
+      "contentID": "5137",
+      "contentType": "VOD"
+    },
+    "subjectIDs": [
+      "moviesreality",
+      "moviesnovelties",
+      "moviesall",
+      "TCFreeVod",
+      "CAwfulEnding",
+      "MReality",
+      "moviespopular",
+      "AllMovies"
+    ],
+    "code": "11110000001308",
+    "isLike": "0",
+    "mediaFiles": [
+      {
+        "preview": "0",
+        "isDownload": "1",
+        "code": "69485",
+        "customFields": [],
+        "maxBitrate": "0.977",
+        "bitrate": "977",
+        "elapseTime": "6204",
+        "multiBitrates": [
+          "6216"
+        ],
+        "extensionFields": [],
+        "formatOf3D": "1",
+        "encrypt": "0",
+        "uploadType": "0",
+        "definition": "1",
+        "ID": "69485",
+        "dimension": "2",
+        "videoCodec": "H.264",
+        "CGMSA": "0",
+        "fps": "24.0",
+        "macrovision": "0",
+        "supportTerminals": [],
+        "fileSize": "757663500",
+        "analogOutputEnable": "1",
+        "HDCPEnable": "0",
+        "fileFormat": "4"
+      }
+    ],
+    "averageScore": "8.3",
+    "produceZones": [
+      {
+        "name": "United States",
+        "ID": "US"
+      }
+    ],
+    "genres": [
+      {
+        "genreID": "1",
+        "genreType": "2",
+        "genreName": "Ужасы"
+      },
+      {
+        "genreID": "12",
+        "genreType": "2",
+        "genreName": "Фантастика"
+      }
+    ],
+    "castRoles": [
+      {
+        "casts": [
+          {
+            "extensionFields": [],
+            "castID": "10850",
+            "castCode": "10850",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180920/2018092008314334514p.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Ава Колкер"
+          },
+          {
+            "extensionFields": [],
+            "castID": "10849",
+            "castCode": "10849",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180920/20180920083043342c1v.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Алек Рид"
+          },
+          {
+            "extensionFields": [],
+            "castID": "10848",
+            "castCode": "10848",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180920/201809200828433426xz.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Тесса Феррер"
+          },
+          {
+            "extensionFields": [],
+            "castID": "10847",
+            "castCode": "10847",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180920/20180920082318341xjk.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Джош Стюарт"
+          },
+          {
+            "extensionFields": [],
+            "castID": "10846",
+            "castCode": "10846",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180920/201809200822083423s1.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Спенсер Лок"
+          },
+          {
+            "extensionFields": [],
+            "castID": "10845",
+            "castCode": "10845",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180920/20180920082103346l1q.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Кейтлин Джерард"
+          },
+          {
+            "extensionFields": [],
+            "castID": "10844",
+            "castCode": "10844",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180920/20180920081918356204.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Кирк Асеведо"
+          },
+          {
+            "extensionFields": [],
+            "castID": "10843",
+            "castCode": "10843",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180920/20180920081818344vdr.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Энгус Сэмпсон"
+          },
+          {
+            "extensionFields": [],
+            "castID": "10842",
+            "castCode": "10842",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180920/20180920081643342sou.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Ли Уоннелл"
+          },
+          {
+            "extensionFields": [],
+            "castID": "10841",
+            "castCode": "10841",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180920/20180920081458342sk1.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Лин Шэй"
+          }
+        ],
+        "roleType": "0"
+      }
+    ],
+    "introduce": "Новая глава истории об экстрасенсе, которая умеет разговаривать с мёртвыми. Детство Элизы было трудным — жестокий отец считал, что девочка придумывает истории о потустороннем, поэтому бил её и запирал в подвале. Однажды, сидя в тёмном подвале, Элиза начинает общаться с коварным призраком, который убеждает её открыть дверь. Вырвавшееся наружу зло тут же убивает мать девочки.\n\nМного лет спустя Элиза всё ещё пытается восстановить в памяти события той ужасной ночи, когда получает просьбу о помощи. Мужчину одолели призраки, и живёт он в том самом доме, где прошло детство Элизы.",
+    "produceZone": {
+      "name": "United States",
+      "ID": "US"
+    },
+    "picture": {
+      "hcsSlaveAddrs": [],
+      "posters": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201808/20180818/201808181646245740dg.png"
+      ],
+      "drafts": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180918/20180918145431884zfj.png"
+      ],
+      "titles": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180921/20180921111703354etq.png",
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201808/20180818/20180818164344581uuq.png"
+      ],
+      "extensionFields": [],
+      "backgrounds": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201808/20180818/20180818164344580fiu.png"
+      ],
+      "stills": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201808/20180818/20180818164344580ufh.png",
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201808/20180818/20180818164344581jsp.png",
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201808/20180818/20180818164344581ekf.png"
+      ],
+      "others": []
+    },
+    "VODType": "0"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "result": {
+    "retMsg": "GetVodDetail success.",
+    "retCode": "000000000"
+  },
+  "VODDetail": {
+    "rating": {
+      "name": "0+",
+      "ID": "0"
+    },
+    "userScore": "0",
+    "produceDate": "20171207",
+    "isSubscribed": "1",
+    "ID": "107521",
+    "scoreTimes": "4",
+    "contentType": "VIDEO_VOD",
+    "likes": "0",
+    "name": "Джаз",
+    "favorite": {
+      "collectTime": "1544189328000",
+      "catalogID": "-1",
+      "contentID": "107521",
+      "contentType": "VOD"
+    },
+    "subjectIDs": [
+      "moviesreality",
+      "moviesnovelties",
+      "moviesall",
+      "4K",
+      "packagesfvod",
+      "moviesshows",
+      "AllMovies",
+      "SciFi",
+      "MShows"
+    ],
+    "code": "111100000037886",
+    "isLike": "0",
+    "mediaFiles": [
+      {
+        "preview": "0",
+        "isDownload": "0",
+        "code": "107522",
+        "customFields": [],
+        "maxBitrate": "18.171",
+        "bitrate": "18171",
+        "elapseTime": "158",
+        "multiBitrates": [
+          "5000"
+        ],
+        "extensionFields": [],
+        "formatOf3D": "1",
+        "encrypt": "0",
+        "uploadType": "0",
+        "definition": "2",
+        "ID": "107522",
+        "dimension": "2",
+        "videoCodec": "H.265",
+        "CGMSA": "0",
+        "fps": "60.0",
+        "macrovision": "0",
+        "supportTerminals": [],
+        "fileSize": "358877250",
+        "analogOutputEnable": "1",
+        "HDCPEnable": "0",
+        "fileFormat": "4"
+      }
+    ],
+    "averageScore": "9.5",
+    "produceZones": [
+      {
+        "name": "Japan",
+        "ID": "JP"
+      }
+    ],
+    "genres": [
+      {
+        "genreID": "12",
+        "genreType": "2",
+        "genreName": "Фантастика"
+      },
+      {
+        "genreID": "20",
+        "genreType": "2",
+        "genreName": "4K"
+      }
+    ],
+    "produceZone": {
+      "name": "Japan",
+      "ID": "JP"
+    },
+    "picture": {
+      "hcsSlaveAddrs": [],
+      "posters": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181017/20181017064016371bzc.png"
+      ],
+      "titles": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181019/20181019122211369dkj.png"
+      ],
+      "ads": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201811/20181115/20181115094331376035.png"
+      ],
+      "extensionFields": [],
+      "backgrounds": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181017/20181017064016371r4e.png"
+      ],
+      "stills": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201811/20181115/20181115094331376g6d.png"
+      ],
+      "others": []
+    },
+    "VODType": "0"
+  }
+}

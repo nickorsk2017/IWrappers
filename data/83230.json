@@ -1,0 +1,158 @@
+{
+  "result": {
+    "retMsg": "GetVodDetail success.",
+    "retCode": "000000000"
+  },
+  "VODDetail": {
+    "episodeCount": "2",
+    "rating": {
+      "name": "18+",
+      "ID": "18"
+    },
+    "userScore": "0",
+    "produceDate": "20130101",
+    "isSubscribed": "1",
+    "ID": "83230",
+    "scoreTimes": "5",
+    "contentType": "VIDEO_VOD",
+    "episodes": [
+      {
+        "VOD": {
+          "code": "11110000003847",
+          "averageScore": "4.3",
+          "isSubscribed": "1",
+          "ID": "33299",
+          "contentType": "VIDEO_VOD",
+          "picture": {
+            "hcsSlaveAddrs": [],
+            "posters": [
+              "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180920/20180920093508372s9d.png"
+            ],
+            "titles": [
+              "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180921/20180921104843380g1o.png"
+            ],
+            "ads": [
+              "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180920/20180920093708368za2.png"
+            ],
+            "extensionFields": [],
+            "others": []
+          },
+          "name": "Карточный Домик, Сезон 4"
+        },
+        "sitcomNO": "1"
+      },
+      {
+        "VOD": {
+          "code": "11110000003848",
+          "averageScore": "4.0",
+          "isSubscribed": "1",
+          "ID": "33300",
+          "contentType": "VIDEO_VOD",
+          "picture": {
+            "hcsSlaveAddrs": [],
+            "posters": [
+              "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180920/20180920093638369prj.png"
+            ],
+            "titles": [
+              "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180921/201809211049583708e8.png"
+            ],
+            "ads": [
+              "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180920/2018092009363836974d.png"
+            ],
+            "extensionFields": [],
+            "others": []
+          },
+          "name": "Карточный Домик, Сезон 5"
+        },
+        "sitcomNO": "2"
+      }
+    ],
+    "likes": "0",
+    "name": "Карточный домик",
+    "subjectIDs": [
+      "moviesnovelties",
+      "showsrecommended",
+      "moviesseries",
+      "MSeries",
+      "showsall"
+    ],
+    "code": "11110000005132",
+    "isLike": "0",
+    "averageScore": "6.4",
+    "castRoles": [
+      {
+        "casts": [
+          {
+            "extensionFields": [],
+            "castID": "8970",
+            "castCode": "8970",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181015/20181015141521358ypu.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Кейт Мара"
+          }
+        ],
+        "roleType": "0"
+      },
+      {
+        "casts": [
+          {
+            "extensionFields": [],
+            "castID": "8968",
+            "castCode": "8968",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181015/201810151414513606zw.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Aллен Култер"
+          },
+          {
+            "extensionFields": [],
+            "castID": "8969",
+            "castCode": "8969",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181015/20181015141416361egt.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Джеймс Фоули"
+          }
+        ],
+        "roleType": "1"
+      }
+    ],
+    "introduce": "За помощь в избирательной кампании президента США Гаррета Уолкера конгрессмен Фрэнк Андервуд рассчитывал получить пост Госсекретаря США. Однако его ожидания обмануты. Френк и его супруга Клэр намерены во что бы то ни стало отомстить и вернуть обещанную власть",
+    "picture": {
+      "hcsSlaveAddrs": [],
+      "posters": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180921/20180921104523379wdj.png",
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180919/20180919151329215aoq.png",
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180921/20180921082648387v6j.png"
+      ],
+      "titles": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180920/20180920122223373ix2.png"
+      ],
+      "ads": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180919/201809191513292157gr.png"
+      ],
+      "extensionFields": [],
+      "stills": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180919/20180919151329215oac.png"
+      ],
+      "others": []
+    },
+    "VODType": "2"
+  }
+}

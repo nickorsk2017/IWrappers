@@ -1,0 +1,180 @@
+{
+  "result": {
+    "retMsg": "GetVodDetail success.",
+    "retCode": "000000000"
+  },
+  "VODDetail": {
+    "rating": {
+      "name": "6+",
+      "ID": "6"
+    },
+    "userScore": "0",
+    "produceDate": "20171111",
+    "isSubscribed": "1",
+    "ID": "5165",
+    "scoreTimes": "3",
+    "contentType": "VIDEO_VOD",
+    "likes": "0",
+    "bookmark": {
+      "itemID": "5165",
+      "rangeTime": "485",
+      "subContentID": "",
+      "updateTime": "1543413523000",
+      "bookmarkType": "VOD"
+    },
+    "name": "Фердинанд",
+    "subjectIDs": [
+      "packagesforchildren",
+      "Kids",
+      "moviesnovelties",
+      "moviesall",
+      "MKids",
+      "TCFreeVod",
+      "packagestoons",
+      "moviespopular",
+      "AllMovies",
+      "movieschildren"
+    ],
+    "code": "11110000001314",
+    "isLike": "0",
+    "mediaFiles": [
+      {
+        "preview": "0",
+        "isDownload": "1",
+        "code": "69132",
+        "customFields": [],
+        "maxBitrate": "0.977",
+        "bitrate": "977",
+        "elapseTime": "6492",
+        "multiBitrates": [
+          "11000"
+        ],
+        "extensionFields": [],
+        "formatOf3D": "1",
+        "encrypt": "0",
+        "uploadType": "0",
+        "definition": "1",
+        "ID": "69132",
+        "dimension": "2",
+        "videoCodec": "H.264",
+        "CGMSA": "0",
+        "fps": "24.0",
+        "macrovision": "0",
+        "supportTerminals": [],
+        "fileSize": "792835500",
+        "analogOutputEnable": "1",
+        "HDCPEnable": "0",
+        "fileFormat": "4"
+      }
+    ],
+    "averageScore": "9.3",
+    "produceZones": [
+      {
+        "name": "United States",
+        "ID": "US"
+      }
+    ],
+    "genres": [
+      {
+        "genreID": "6",
+        "genreType": "2",
+        "genreName": "Мультфильмы"
+      },
+      {
+        "genreID": "11",
+        "genreType": "2",
+        "genreName": "Семейное кино"
+      }
+    ],
+    "castRoles": [
+      {
+        "casts": [
+          {
+            "extensionFields": [],
+            "castID": "1324",
+            "castCode": "1324",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180912/20180912115453104yzi.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Джон Сина"
+          },
+          {
+            "extensionFields": [],
+            "castID": "1347",
+            "castCode": "1347",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180912/20180912123258106y52.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Кейт МакКиннон"
+          },
+          {
+            "extensionFields": [],
+            "castID": "1336",
+            "castCode": "1336",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180912/201809121210181115gh.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Дэвид Теннант"
+          },
+          {
+            "extensionFields": [],
+            "castID": "1304",
+            "castCode": "1304",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201809/20180912/201809121141531072p4.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Бобби Каннавале"
+          }
+        ],
+        "roleType": "0"
+      }
+    ],
+    "introduce": "Фердинанд — самый добродушный бык во всей Испании. Несмотря на внушительные размеры и недюжинную силу, он с детства предпочитал сидеть на лужайке и любоваться цветами вместо того, чтобы бодаться с другими быками. По нелепой случайности Фердинанд был выбран среди других соплеменников для участия в бое быков в Мадриде.\n\nФердинанду предстоит отстоять свои миролюбивые убеждения и напомнить нам о том, что даже перед лицом трудностей главное — остаться собой. Ведь только так и можно изменить мир вокруг.",
+    "produceZone": {
+      "name": "United States",
+      "ID": "US"
+    },
+    "picture": {
+      "hcsSlaveAddrs": [],
+      "posters": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201808/20180819/201808191707195778hk.png"
+      ],
+      "titles": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201808/20180819/201808191707195771uu.png"
+      ],
+      "ads": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201808/20180819/20180819170719577bhn.png"
+      ],
+      "extensionFields": [],
+      "backgrounds": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201808/20180819/201808191707195771ac.png"
+      ],
+      "stills": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201808/20180819/20180819170719577blo.png",
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201808/20180819/2018081917071957877j.png"
+      ],
+      "others": []
+    },
+    "VODType": "0"
+  }
+}

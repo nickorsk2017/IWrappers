@@ -1,0 +1,192 @@
+{
+  "result": {
+    "retMsg": "GetVodDetail success.",
+    "retCode": "000000000"
+  },
+  "VODDetail": {
+    "rating": {
+      "name": "6+",
+      "ID": "6"
+    },
+    "userScore": "0",
+    "produceDate": "20180101",
+    "isSubscribed": "1",
+    "ID": "140831",
+    "scoreTimes": "1",
+    "contentType": "VIDEO_VOD",
+    "likes": "0",
+    "name": "Смешарики. Дежавю",
+    "favorite": {
+      "collectTime": "1544189360000",
+      "catalogID": "-1",
+      "contentID": "140831",
+      "contentType": "VOD"
+    },
+    "subjectIDs": [
+      "packagesforchildren",
+      "moviesnovelties",
+      "moviesall",
+      "MKids",
+      "AllMovies",
+      "movieschildren",
+      "moviespremiere"
+    ],
+    "code": "11110000006461",
+    "isLike": "0",
+    "mediaFiles": [
+      {
+        "preview": "0",
+        "isDownload": "1",
+        "code": "140832",
+        "customFields": [],
+        "maxBitrate": "3.711",
+        "bitrate": "3711",
+        "elapseTime": "5104",
+        "multiBitrates": [
+          "3800",
+          "2100",
+          "512"
+        ],
+        "extensionFields": [],
+        "formatOf3D": "1",
+        "encrypt": "0",
+        "uploadType": "0",
+        "definition": "1",
+        "ID": "140832",
+        "dimension": "2",
+        "videoCodec": "H.264",
+        "CGMSA": "0",
+        "fps": "24.0",
+        "macrovision": "0",
+        "supportTerminals": [],
+        "fileSize": "2367618000",
+        "analogOutputEnable": "1",
+        "HDCPEnable": "0",
+        "fileFormat": "4"
+      }
+    ],
+    "averageScore": "9.0",
+    "produceZones": [
+      {
+        "name": "Russian Federation",
+        "ID": "RU"
+      }
+    ],
+    "genres": [
+      {
+        "genreID": "4",
+        "genreType": "2",
+        "genreName": "Боевики"
+      },
+      {
+        "genreID": "6",
+        "genreType": "2",
+        "genreName": "Мультфильмы"
+      },
+      {
+        "genreID": "7",
+        "genreType": "2",
+        "genreName": "Комедии"
+      }
+    ],
+    "castRoles": [
+      {
+        "casts": [
+          {
+            "extensionFields": [],
+            "castID": "3054",
+            "castCode": "3054",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181010/20181010124256360y62.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Сергей Мардарь"
+          },
+          {
+            "extensionFields": [],
+            "castID": "2566",
+            "castCode": "2566",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181010/20181010124216364p30.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Павел Деревянко"
+          },
+          {
+            "extensionFields": [],
+            "castID": "16655",
+            "castCode": "16655",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181010/20181010124146362iwg.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Михаил Черняк"
+          },
+          {
+            "extensionFields": [],
+            "castID": "16654",
+            "castCode": "16654",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181010/2018101012412136114c.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Антон Виноградов"
+          }
+        ],
+        "roleType": "0"
+      },
+      {
+        "casts": [
+          {
+            "extensionFields": [],
+            "castID": "18018",
+            "castCode": "denischernov",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181012/20181012091006368xwr.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Денис Чернов"
+          }
+        ],
+        "roleType": "1"
+      }
+    ],
+    "introduce": "Крош решает устроить незабываемый день рождения Копатыча — он обращается в агентство «Дежавю», которое обещает своим клиентам удивительные путешествия во времени. Но из-за несоблюдения условий договора всех смешариков раскидывает во времени, а Крошу придется собирать друзей по разным эпохам в компании своего второго «Я» — повзрослевшего и ворчливого Шорка, появившегося из-за временного парадокса.",
+    "produceZone": {
+      "name": "Russian Federation",
+      "ID": "RU"
+    },
+    "picture": {
+      "hcsSlaveAddrs": [],
+      "posters": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181012/201810120907244782pr.png"
+      ],
+      "extensionFields": [],
+      "backgrounds": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181012/20181012090724478eyi.png"
+      ],
+      "others": []
+    },
+    "VODType": "0"
+  }
+}

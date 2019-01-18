@@ -1,0 +1,184 @@
+{
+  "result": {
+    "retMsg": "GetVodDetail success.",
+    "retCode": "000000000"
+  },
+  "VODDetail": {
+    "rating": {
+      "name": "16+",
+      "ID": "16"
+    },
+    "userScore": "0",
+    "produceDate": "20170101",
+    "isSubscribed": "1",
+    "ID": "153412",
+    "scoreTimes": "3",
+    "contentType": "VIDEO_VOD",
+    "likes": "0",
+    "name": "Тёмная башня",
+    "subjectIDs": [
+      "packagesnotscarythrillers",
+      "moviesnovelties",
+      "moviesall",
+      "CAwfulEnding",
+      "AllMovies"
+    ],
+    "code": "11110000007686",
+    "isLike": "0",
+    "mediaFiles": [
+      {
+        "preview": "0",
+        "isDownload": "1",
+        "code": "153413",
+        "customFields": [],
+        "maxBitrate": "3.711",
+        "bitrate": "3711",
+        "elapseTime": "5681",
+        "multiBitrates": [
+          "3800",
+          "2100",
+          "512"
+        ],
+        "extensionFields": [],
+        "formatOf3D": "1",
+        "encrypt": "0",
+        "uploadType": "0",
+        "definition": "1",
+        "ID": "153413",
+        "dimension": "2",
+        "videoCodec": "H.264",
+        "CGMSA": "0",
+        "fps": "24.0",
+        "macrovision": "0",
+        "supportTerminals": [],
+        "fileSize": "2635273875",
+        "analogOutputEnable": "1",
+        "HDCPEnable": "0",
+        "fileFormat": "4"
+      }
+    ],
+    "averageScore": "8.7",
+    "produceZones": [
+      {
+        "name": "United States",
+        "ID": "US"
+      }
+    ],
+    "genres": [
+      {
+        "genreID": "1",
+        "genreType": "2",
+        "genreName": "Ужасы"
+      },
+      {
+        "genreID": "12",
+        "genreType": "2",
+        "genreName": "Фантастика"
+      },
+      {
+        "genreID": "14",
+        "genreType": "2",
+        "genreName": "Фэнтези"
+      }
+    ],
+    "castRoles": [
+      {
+        "casts": [
+          {
+            "extensionFields": [],
+            "castID": "18013",
+            "castCode": "idriselba",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181012/20181012074506385x4y.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Идрис Эльба"
+          },
+          {
+            "extensionFields": [],
+            "castID": "10774",
+            "castCode": "10774",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181015/20181015144341367qpu.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Мэттью МакКонахи"
+          },
+          {
+            "extensionFields": [],
+            "castID": "15691",
+            "castCode": "15691",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181015/20181015144431359g66.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Том Тейлор"
+          },
+          {
+            "extensionFields": [],
+            "castID": "15692",
+            "castCode": "15692",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181015/20181015144406360o7n.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Клаудия Ким"
+          }
+        ],
+        "roleType": "0"
+      },
+      {
+        "casts": [
+          {
+            "extensionFields": [],
+            "castID": "18021",
+            "castCode": "nikolayarsel",
+            "picture": {
+              "hcsSlaveAddrs": [],
+              "icons": [
+                "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181012/201810120910063686u4.png"
+              ],
+              "extensionFields": [],
+              "others": []
+            },
+            "castName": "Николай Арсель"
+          }
+        ],
+        "roleType": "1"
+      }
+    ],
+    "introduce": "Наш мир — не единственный из существующих. Заклятые враги Роланд Дискейн, последний из ордена стрелков, и Уолтер О’Дим, известный также как Человек в черном, ведут извечную борьбу. На кону — мифическая Темная Башня, последний оплот и надежда вселенной, без которой мир будет повержен в полный хаос и разрушение. Силам добра и зла суждено столкнуться в последней схватке, ведь Роланд Дискейн — единственный, кому под силу остановить Человека в черном, прежде чем тот разрушит Темную Башню.",
+    "produceZone": {
+      "name": "United States",
+      "ID": "US"
+    },
+    "picture": {
+      "hcsSlaveAddrs": [],
+      "posters": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181015/201810151156260431wf.png"
+      ],
+      "extensionFields": [],
+      "backgrounds": [
+        "http://195.34.49.38:32100/CPS/images/universal/film/poster/201810/20181015/201810151156260438dk.png"
+      ],
+      "others": []
+    },
+    "VODType": "0"
+  }
+}

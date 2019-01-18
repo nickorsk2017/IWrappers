@@ -1,0 +1,18 @@
+{
+    "extends": "../tslint.json",
+    "autoFixOnSave": true,
+    "no-shadowed-variable": false,
+    "rules": {
+        "directive-selector": [
+            true,
+            "attribute",
+            "app",
+            "camelCase"
+        ],
+        "component-selector": [
+            true,
+            "element",
+            "app"
+        ]
+    }
+}
