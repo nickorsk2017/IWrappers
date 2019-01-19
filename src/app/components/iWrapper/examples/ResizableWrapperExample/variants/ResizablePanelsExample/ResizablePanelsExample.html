@@ -1,0 +1,39 @@
+<div [ngStyle]="{'grid-template-columns': getTemplateGridOfLeftFrame()}" class="root">
+  <resizable-wrapper
+    class="left-frame"
+    [directions]="['right']"
+    [onInitSize]="changeSizeLeftPanel"
+    [onResize]="changeSizeLeftPanel"
+    [visibleResizePoints]="true"
+    [size]="{
+      initWidth: 200,
+      initHeight: '100%',
+      minHeight: 200,
+      minWidth: 200,
+      maxHeight: 300,
+      maxWidth: 300
+    }">
+      The left frame
+  </resizable-wrapper>
+  <div [ngStyle]="{'grid-template-rows': getTemplateGridOfRightFrame()}" class="container">
+    <div class="top-frame">
+      The top frame
+    </div>
+    <resizable-wrapper
+      class="bottom-frame"
+      [directions]="['top']"
+      [onInitSize]="changeSizeBottomPanel"
+      [onResize]="changeSizeBottomPanel"
+      [visibleResizePoints]="true"
+      [size]="{
+        initWidth: '100%',
+        initHeight: 100,
+        minHeight: 60,
+        minWidth: 60,
+        maxHeight: 200,
+        maxWidth: 200
+      }">
+        The bottom frame
+    </resizable-wrapper>
+  </div>
+</div>

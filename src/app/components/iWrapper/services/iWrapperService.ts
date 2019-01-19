@@ -59,6 +59,12 @@ export class iWrapperService {
       left: event.pageX
     };
   }
+  enableSelection() {
+    document.body.style.userSelect = 'all';
+  }
+  disableSelection() {
+    document.body.style.userSelect = 'none';
+  }
   setCursor(cursorName: 'row-resize' | 'col-resize' | 'nwse-resize' | 'nesw-resize') {
     document.body.style.cursor = cursorName;
   }

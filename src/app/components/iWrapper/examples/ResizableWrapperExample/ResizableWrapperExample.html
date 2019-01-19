@@ -1,0 +1,7 @@
+<panel-of-variants [onSelect]="onExampleSelect" [variants]="examples" [selectedVariant]="typeExample"></panel-of-variants>
+<div class="container" *ngIf="typeExample === 'simpleExamples'">
+  <resizable-examples></resizable-examples>
+</div>
+<div class="container" *ngIf="typeExample === 'frames'">
+  <resizable-panels-example></resizable-panels-example>
+</div>

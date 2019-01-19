@@ -1,7 +1,11 @@
 import { Input, Component, ChangeDetectionStrategy, HostListener, ElementRef } from '@angular/core';
 import {iWrapperService} from '../../services';
 
-type Direction = 'top' | 'bottom' | 'left' | 'right' | 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right';
+type Direction = 'top' | 'bottom' | 'left' | 'right' | 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right' | 'all';
+interface SizeWrapper {
+  width: number;
+  height: number;
+}
 
 @Component({
   selector: 'resizable-wrapper',
@@ -9,17 +13,7 @@ type Direction = 'top' | 'bottom' | 'left' | 'right' | 'top-left' | 'top-right' 
   styleUrls: ['./ResizableWrapper.scss'],
 })
 export class ResizableWrapper {
-  @Input() size: {
-    initWidth: number,
-    initHeight: number,
-    minHeight: number,
-    minWidth: number,
-    maxHeight: number,
-    maxWidth: number
-  };
-  @Input() visibleResizePoints: Boolean = false;
-  @Input() float: 'right' | 'left' | null = null;
-  sizeBeforeResized: {height: number, width: number} = {height: 0, width: 0};
+  sizeBeforeResized: SizeWrapper = {height: 0, width: 0};
   deltaPositionOfMouse: any = {
     topStart: 0,
     topEnd: 0,
@@ -27,6 +21,19 @@ export class ResizableWrapper {
     leftEnd: 0
   };
   direction: Direction | null;
+  @Input() directions: Direction[] = ['all'];
+  @Input() size: {
+    initWidth: number | string,
+    initHeight: number | string,
+    minHeight?: number,
+    minWidth?: number,
+    maxHeight?: number,
+    maxWidth?: number
+  };
+  @Input() visibleResizePoints: Boolean = false;
+  @Input() float: 'right' | 'left' | null = null;
+  @Input() onInitSize: (size: SizeWrapper) => void = (size: SizeWrapper) => {};
+  @Input() onResize: (size: SizeWrapper) => void  = (size: SizeWrapper) => {};
   constructor(private wrapperService: iWrapperService, private hostElement: ElementRef) {
     this.bindAll();
   }
@@ -36,17 +43,21 @@ export class ResizableWrapper {
   }
   ngAfterViewInit() {
     const hostElement = this.hostElement.nativeElement;
-    hostElement.style.width = `${this.size.initWidth}px`;
-    hostElement.style.height = `${this.size.initHeight}px`;
+    hostElement.style.width = (typeof this.size.initWidth === 'string') ? this.size.initWidth : `${this.size.initWidth}px`;
+    hostElement.style.height = (typeof this.size.initHeight === 'string')  ?  this.size.initHeight : `${this.size.initHeight}px`;
     if (this.float) {
       hostElement.style.float = this.float;
     }
+    setTimeout(() => {
+      this.onInitSize({width: hostElement.offsetWidth, height: hostElement.offsetHeight});
+    });
     this.subscribeEvents();
   }
   subscribeEvents() {
     this.wrapperService.on('mouseup', () => {
       this.wrapperService.off(this.onMouseMove);
       this.wrapperService.resetCursor();
+      this.wrapperService.enableSelection();
     });
   }
    /** Init delta position */
@@ -65,6 +76,7 @@ export class ResizableWrapper {
     this.initDeltaPosition(event);
     this.initSize();
     this.setCursor();
+    this.wrapperService.disableSelection();
     this.wrapperService.on('mousemove', this.onMouseMove);
   }
   setCursor() {
@@ -94,6 +106,9 @@ export class ResizableWrapper {
       this.wrapperService.setCursor('col-resize');
       break;
     }
+  }
+  inDirections(direction: Direction) {
+    return this.directions.includes(direction) || this.directions.includes('all');
   }
   onMouseMove(dataHandler: any) {
     const mousePosition = this.wrapperService.getPositionOfMouse(dataHandler.event);
@@ -145,5 +160,6 @@ export class ResizableWrapper {
     // update delta position
     this.deltaPositionOfMouse.topEnd = mousePosition.top;
     this.deltaPositionOfMouse.leftEnd = mousePosition.left;
+    this.onResize({width: this.hostElement.nativeElement.offsetWidth, height: this.hostElement.nativeElement.offsetHeight});
   }
 }
