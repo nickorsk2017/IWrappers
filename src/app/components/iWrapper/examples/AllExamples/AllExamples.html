@@ -1,0 +1,3 @@
+<movable-wrapper-example *ngIf="typeExample === 'Movable'"></movable-wrapper-example>
+<resizable-wrapper-example *ngIf="typeExample === 'Resizable'"></resizable-wrapper-example>
+<panel-of-variants [label]="'Examples:'" [position]="{bottom: 10, left: 10}" [onSelect]="onExampleSelect" [variants]="examples" [selectedVariant]="typeExample"></panel-of-variants>

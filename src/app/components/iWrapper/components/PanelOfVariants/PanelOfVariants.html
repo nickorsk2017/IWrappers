@@ -1,1 +1,2 @@
+<div class="label">{{label}}</div>
 <a *ngFor="let variant of variants" (click)="onClick(variant)" [ngClass]="{current: selectedVariant === variant}" class="button-variant">{{variant}}</a>

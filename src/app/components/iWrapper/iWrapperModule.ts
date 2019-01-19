@@ -11,7 +11,8 @@ import {
   MovableWrapperExample,
   ResizableWrapperExample,
   ResizableExamples,
-  ResizablePanelsExample
+  ResizablePanelsExample,
+  AllExamples
 } from './examples';
 // services
 import {iWrapperService} from './services';
@@ -26,7 +27,8 @@ import {iWrapperService} from './services';
     ResizableWrapper,
     ResizableWrapperExample,
     ResizableExamples,
-    ResizablePanelsExample
+    ResizablePanelsExample,
+    AllExamples
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import {iWrapperService} from './services';
     ResizableWrapper,
     ResizableWrapperExample,
     ResizableExamples,
-    ResizablePanelsExample
+    ResizablePanelsExample,
+    AllExamples
   ],
   providers: [iWrapperService]
 })
