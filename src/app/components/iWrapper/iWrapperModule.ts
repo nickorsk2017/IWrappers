@@ -3,7 +3,10 @@ import { NgModule } from '@angular/core';
 import {
   MovableWrapper,
   PanelOfVariants,
-  ResizableWrapper
+  ResizableWrapper,
+  DnDWrapper,
+  Ghost,
+  GhostExample
 } from './components';
 import {
   MovableWithProtectorExample,
@@ -12,7 +15,9 @@ import {
   ResizableWrapperExample,
   ResizableExamples,
   ResizablePanelsExample,
-  AllExamples
+  AllExamples,
+  DragAndDropWrapperExample,
+  ExampleDnDChild
 } from './examples';
 // services
 import {iWrapperService} from './services';
@@ -28,22 +33,27 @@ import {iWrapperService} from './services';
     ResizableWrapperExample,
     ResizableExamples,
     ResizablePanelsExample,
-    AllExamples
+    AllExamples,
+    DragAndDropWrapperExample,
+    DnDWrapper,
+    Ghost,
+    GhostExample,
+    ExampleDnDChild
   ],
   imports: [
     BrowserModule,
   ],
   exports: [
     MovableWrapper,
-    MovableWrapperExample,
     ResizableWrapper,
-    ResizableWrapperExample,
-    ResizableExamples,
-    ResizablePanelsExample,
-    AllExamples
+    AllExamples,
+    DnDWrapper
   ],
+  entryComponents: [Ghost, GhostExample, ExampleDnDChild],
   providers: [iWrapperService]
 })
 export class iWrapperModule {
-  constructor( wrapperService: iWrapperService ) {}
+  constructor( wrapperService: iWrapperService ) {
+    wrapperService.createGhostComponent(Ghost);
+  }
 }

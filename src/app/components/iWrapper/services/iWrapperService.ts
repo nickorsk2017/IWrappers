@@ -1,10 +1,28 @@
-import {Injectable} from '@angular/core';
-import { createOfflineCompileUrlResolver } from '@angular/compiler';
+import {
+  Injectable,
+  Injector,
+  ComponentFactoryResolver,
+  EmbeddedViewRef,
+  ApplicationRef,
+  ComponentRef
+} from '@angular/core';
+import {GhostEntity} from '../components/Ghost/classes/GhostEntity';
+
+interface GhostData {
+  component: any;
+  componentInputs: any;
+  data: any;
+  typeRecipient: string;
+}
 
 @Injectable()
 export class iWrapperService {
   handlers = [];
-  constructor() {
+  ghost: GhostEntity;
+  constructor(
+    public componentFactoryResolver: ComponentFactoryResolver,
+    public appRef: ApplicationRef,
+    public injector: Injector) {
     this.bindAll();
     this.subscribeEvents();
   }
@@ -22,10 +40,20 @@ export class iWrapperService {
     this.fire({typeHandler: 'mousedown', event});
   }
   onMousemove(event: MouseEvent) {
+    if (this.ghost) {
+      this.ghost.updatePosition({
+        top: event.pageY,
+        left: event.pageX
+      });
+    }
     this.fire({typeHandler: 'mousemove', event});
   }
   onMouseup(event: MouseEvent) {
-    this.fire({typeHandler: 'mouseup', event});
+    this.fire({
+      typeHandler: 'mouseup',
+      event
+    });
+    this.unsetGhost();
   }
   /** Subscribe to coordinate events */
   on(typeHandler: 'mousemove' | 'click' | 'mousedown' | 'mouseup', handler: (event: MouseEvent) => void) {
@@ -41,7 +69,13 @@ export class iWrapperService {
   fire(parameters: {typeHandler: 'mousemove' | 'click' | 'mousedown' | 'mouseup', data?: any | null, event: MouseEvent}) {
       this.handlers.forEach((handlerItem) => {
         if (parameters.typeHandler === handlerItem.typeHandler) {
-          handlerItem.handler.call(handlerItem.handler, {data: parameters.data || null, event});
+          const response: any = {
+            event
+          };
+          if (parameters.data) {
+            response.data = parameters.data;
+          }
+          handlerItem.handler.call(handlerItem.handler, response);
         }
       });
   }
@@ -70,5 +104,23 @@ export class iWrapperService {
   }
   resetCursor() {
     document.body.style.cursor = 'initial';
+  }
+  /** Create ghost component */
+  createGhostComponent(ghostComponent: any) {
+    this.ghost = new GhostEntity(ghostComponent, this.componentFactoryResolver, this.appRef, this.injector);
+  }
+  /** Set ghost for Drag and Drop with data */
+  setGhost(ghostData: GhostData) {
+    this.disableSelection();
+    this.ghost.createChildGhostComponent(ghostData);
+  }
+  /** Destroy child component of ghost */
+  unsetGhost() {
+    this.enableSelection();
+    this.ghost.destroyChildGhostComponent();
+  }
+  /** Get DnD data */
+  getDataForReceiver() {
+    return this.ghost.getDataForReceiver();
   }
 }

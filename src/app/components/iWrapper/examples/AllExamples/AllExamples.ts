@@ -7,8 +7,8 @@ import {} from '../../services';
   styleUrls: ['./AllExamples.scss'],
 })
 export class AllExamples {
-  typeExample = 'Movable';
-  examples = ['Movable', 'Resizable'];
+  typeExample = 'DragAndDrop';
+  examples = ['Movable', 'Resizable', 'DragAndDrop'];
   constructor() {
     this.bindAll();
   }
