@@ -9,10 +9,21 @@
  margin-top: 100px;
  margin-left: 100px;
  box-sizing: border-box;
+ box-shadow: 3px 0px 16px 0px rgba(0,0,0,0.75);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ user-select: none;
 }
 .movable-component {
   width: 150px;
   height: 150px;
   border: 1px solid red;
   box-sizing: border-box;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  background: #fff;
  }

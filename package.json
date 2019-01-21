@@ -5,8 +5,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open",
-    "build": "ng build --prod --output-path dist/docs --base-href 'https://nickorsk2017.github.io/IWrappers/'",
-    "deploy": "ngh"
+    "build": "ng build --prod --output-path docs --base-href 'https://nickorsk2017.github.io/IWrappers/'",
+    "deploy": "ngh --dir='docs'"
   },
   "private": true,
   "dependencies": {
