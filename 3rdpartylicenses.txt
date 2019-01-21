@@ -266,9 +266,6 @@ Apache-2.0
 @angular/core
 MIT
 
-@ngx-translate/http-loader
-MIT
-
 @angular/common
 MIT
 
@@ -276,9 +273,6 @@ MIT
 MIT
 
 @angular/router
-MIT
-
-@ngx-translate/core
 MIT
 
 zone.js
