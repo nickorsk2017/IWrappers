@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
-import * as Components from './components';
+import {App} from './components';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
@@ -12,9 +12,7 @@ export function createTranslateLoader(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [
-    Object.keys(Components).map(svc => Components[svc])
-  ],
+  declarations: [App],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -28,6 +26,6 @@ export function createTranslateLoader(http: HttpClient) {
     AppRoutingModule,
     iWrapperModule
   ],
-  bootstrap: [Components.App]
+  bootstrap: [App]
 })
 export class AppModule { }
