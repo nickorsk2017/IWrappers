@@ -8,7 +8,7 @@ import { iWrapperService } from '../../services';
 })
 export class DnDWrapper {
   isEnter: Boolean = false;
-  @Input() type: 'drag' | 'drop';
+  @Input() type: 'drag' | 'drop' | 'files';
   @Input() ghostComponent: any;
   @Input() ghostComponentInputs: any = null;
   @Input() data: any;
@@ -21,6 +21,17 @@ export class DnDWrapper {
   bindAll() {}
   ngAfterViewInit() {
     this.subscribeEvents();
+    this.initUploadFiles();
+  }
+  initUploadFiles() {
+    if (this.canUploadFiles()) {
+      ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+        this.hostElement.nativeElement.addEventListener(eventName, (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+        }, false);
+      });
+    }
   }
   // ======= Events, subscribes. =======
   subscribeEvents() {
@@ -28,9 +39,14 @@ export class DnDWrapper {
       if (this.isEnter && this.canReceiveData()) {
         const dataForReceiver = this.wrapperService.getDataForReceiver();
         this.onDrop(dataForReceiver.data);
+      } else if (this.type === 'files') {
+
       }
       this.removeStyle();
     });
+  }
+  canUploadFiles() {
+    return this.type === 'files';
   }
   canReceiveData() {
     const dataForReceiver = this.wrapperService.getDataForReceiver();
@@ -41,6 +57,33 @@ export class DnDWrapper {
       dataForReceiver.data &&
       this.typesSenders.includes(dataForReceiver.typeRecipient)
     );
+  }
+  addDashedBorder() {
+    this.hostElement.nativeElement.style.border = '2px dashed #333';
+  }
+  removeDashedBorder() {
+    this.hostElement.nativeElement.style.border = '';
+  }
+  @HostListener('dragenter', ['$event'])
+  onDropEnter(event) {
+    if (this.canUploadFiles()) {
+      this.addDashedBorder();
+    }
+  }
+  @HostListener('dragleave', ['$event'])
+  onDropLeave(event) {
+    if (this.canUploadFiles()) {
+      this.removeDashedBorder();
+    }
+  }
+  @HostListener('drop', ['$event'])
+  onDropFiles(event) {
+    if (this.canUploadFiles()) {
+      const dt = event.dataTransfer;
+      const files = dt.files;
+      this.onDrop(files);
+      this.removeDashedBorder();
+    }
   }
   @HostListener('mousedown', ['$event'])
   onMouseDown(event: MouseEvent) {

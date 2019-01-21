@@ -20,3 +20,15 @@
   box-sizing: border-box;
   border: 1px solid #fff;
 }
+.logo-container {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
+}
+.logo {
+  width: 150px;
+  height: auto;
+  user-select: none;
+}

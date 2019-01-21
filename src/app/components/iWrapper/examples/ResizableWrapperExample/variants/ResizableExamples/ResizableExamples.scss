@@ -1,6 +1,11 @@
 :host {
   display: inline-block;
   padding: 20px;
+  animation: blur 0.5s;
+}
+@keyframes blur {
+  0%  { filter: blur(10px); }
+  100% { filter: blur(0px); }
 }
 .resizable-component {
   display: inline-block;

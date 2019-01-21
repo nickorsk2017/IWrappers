@@ -12,4 +12,9 @@
   padding: 80px;
   box-sizing: border-box;
   border: 1px solid #fff;
+  animation: blur 0.5s;
+}
+@keyframes blur {
+  0%  { filter: blur(10px); }
+  100% { filter: blur(0px); }
 }

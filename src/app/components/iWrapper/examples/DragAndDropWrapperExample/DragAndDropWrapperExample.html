@@ -1,22 +1,4 @@
-<dnd-wrapper [type]="'drop'" [typesSenders]="['rightItem']" [onDrop]="onDropLeft" class="container">
-    <dnd-wrapper
-    *ngFor="let item of leftBlockItems"
-    [type]="'drag'"
-    [typeRecipient]="'leftItem'"
-    [ghostComponentInputs]="getGhostComponentInputs(item)"
-    [ghostComponent]="getGhostComponent()"
-    [data]="item">
-      <example-dnd-child [data]="item"></example-dnd-child>
-    </dnd-wrapper>
-</dnd-wrapper>
-<dnd-wrapper [type]="'drop'" [typesSenders]="['leftItem']" [onDrop]="onDropRight" class="container">
-    <dnd-wrapper
-    *ngFor="let item of rightBlockItems"
-    [type]="'drag'"
-    [typeRecipient]="'rightItem'"
-    [ghostComponentInputs]="getGhostComponentInputs(item)"
-    [ghostComponent]="getGhostComponent()"
-    [data]="item">
-      <example-dnd-child [data]="item"></example-dnd-child>
-    </dnd-wrapper>
-</dnd-wrapper>
+<panel-of-variants [label]="'Examples:'" [onSelect]="onExampleSelect" [variants]="examples" [selectedVariant]="typeExample"></panel-of-variants>
+<div class="container">
+  <dnd-base-example *ngIf="typeExample == 'simpleExamples'"></dnd-base-example>
+</div>

@@ -1,6 +1,6 @@
 {
-  "name": "IWrappers",
-  "version": "0.0.0",
+  "name": "angular-i-wrappers",
+  "version": "0.1.0",
   "author": "Stepanov Nickolay",
   "scripts": {
     "ng": "ng",
@@ -8,24 +8,48 @@
     "build": "ng build --prod --output-path docs --base-href 'https://nickorsk2017.github.io/IWrappers/'",
     "deploy": "ngh --dir='docs'"
   },
-  "private": true,
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "angular 6",
+    "angular 7",
+    "angular6",
+    "angular7",
+    "drag and drop",
+    "drag and drop angular",
+    "dnd angular",
+    "resize",
+    "resize angular",
+    "resizable angular",
+    "move",
+    "movable angular",
+    "move angular"
+  ],
+  "homepage": "https://nickorsk2017.github.io/IWrappers/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nickorsk2017/IWrappers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nickorsk2017/IWrappers/issues"
+  },
+  "peerDependencies": {
+    "@angular/core": "^7.1.0",
+    "rxjs": "^6.3.3"
+  },
+  "private": false,
   "dependencies": {
-    "@angular/animations": "~7.1.0",
-    "@angular/common": "~7.1.0",
-    "@angular/compiler": "~7.1.0",
-    "@angular/core": "~7.1.0",
-    "@angular/forms": "~7.1.0",
+    "@angular/common": "^7.1.0",
+    "@angular/compiler": "^7.1.0",
+    "@angular/core": "^7.1.0",
     "@angular/http": "^7.1.3",
-    "@angular/platform-browser": "~7.1.0",
-    "@angular/platform-browser-dynamic": "~7.1.0",
-    "@angular/router": "~7.1.0",
-    "@ngrx/store": "7.0.0-beta.1",
-    "@ngx-translate/core": "^11.0.1",
-    "@ngx-translate/http-loader": "^4.0.0",
+    "@angular/router": "^7.1.0",
+    "@angular/platform-browser": "^7.1.0",
+    "@angular/platform-browser-dynamic": "^7.1.0",
     "core-js": "^2.5.4",
     "express": "^4.16.4",
     "http": "0.0.0",
-    "rxjs": "~6.3.3",
+    "rxjs": "^6.3.3",
     "rxjs-compat": "^6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"

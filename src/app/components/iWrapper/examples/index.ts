@@ -7,3 +7,4 @@ export {ResizablePanelsExample} from './ResizableWrapperExample/variants/Resizab
 export {AllExamples} from './AllExamples/AllExamples';
 export { DragAndDropWrapperExample } from './DragAndDropWrapperExample/DragAndDropWrapperExample';
 export {ExampleDnDChild} from './DragAndDropWrapperExample/components/ExampleDnDChild/ExampleDnDChild';
+export {DnDBaseExample} from './DragAndDropWrapperExample/variants/DnDBaseExample/DnDBaseExample';

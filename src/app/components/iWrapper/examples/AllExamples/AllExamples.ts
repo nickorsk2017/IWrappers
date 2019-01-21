@@ -8,7 +8,7 @@ import {} from '../../services';
 })
 export class AllExamples {
   typeExample = 'DragAndDrop';
-  examples = ['Movable', 'Resizable', 'DragAndDrop'];
+  examples = ['DragAndDrop', 'Movable', 'Resizable'];
   constructor() {
     this.bindAll();
   }

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import {
   MovableWrapper,
   PanelOfVariants,
@@ -17,7 +18,8 @@ import {
   ResizablePanelsExample,
   AllExamples,
   DragAndDropWrapperExample,
-  ExampleDnDChild
+  ExampleDnDChild,
+  DnDBaseExample
 } from './examples';
 // services
 import {iWrapperService} from './services';
@@ -38,10 +40,12 @@ import {iWrapperService} from './services';
     DnDWrapper,
     Ghost,
     GhostExample,
-    ExampleDnDChild
+    ExampleDnDChild,
+    DnDBaseExample
   ],
   imports: [
     BrowserModule,
+    RouterModule
   ],
   exports: [
     MovableWrapper,
