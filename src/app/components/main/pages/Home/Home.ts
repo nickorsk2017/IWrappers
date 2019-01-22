@@ -1,14 +1,16 @@
 import { Component, ElementRef } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   templateUrl: './Home.html',
   styleUrls: ['./Home.scss']
 })
 export class Home {
-  constructor(private hostElement: ElementRef) {}
-  ngAfterViewInit() {
+  constructor(private hostElement: ElementRef, private router: Router) {}
+  goDocs() {
+    document.getElementById('logo-container').className += ' logo-container-hide';
     setTimeout(() => {
-      // this.hostElement.nativeElement.style['filter'] = 'none';
-    }, 500);
+      this.router.navigate(['/docs']);
+    }, 200);
   }
 }
