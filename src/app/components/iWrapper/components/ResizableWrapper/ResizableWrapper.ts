@@ -6,6 +6,14 @@ interface SizeWrapper {
   width: number;
   height: number;
 }
+interface Size {
+  initWidth: number | string;
+  initHeight: number | string;
+  minHeight?: number;
+  minWidth?: number;
+  maxHeight?: number;
+  maxWidth?: number;
+}
 
 @Component({
   selector: 'resizable-wrapper',
@@ -22,14 +30,7 @@ export class ResizableWrapper {
   };
   direction: Direction | null;
   @Input() directions: Direction[] = ['all'];
-  @Input() size: {
-    initWidth: number | string,
-    initHeight: number | string,
-    minHeight?: number,
-    minWidth?: number,
-    maxHeight?: number,
-    maxWidth?: number
-  };
+  @Input() size: Size;
   @Input() visibleResizePoints: Boolean = false;
   @Input() float: 'right' | 'left' | null = null;
   @Input() onInitSize: (size: SizeWrapper) => void = (size: SizeWrapper) => {};

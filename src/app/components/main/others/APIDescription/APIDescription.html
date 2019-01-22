@@ -1,0 +1,14 @@
+<table class="api-table">
+  <thead>
+     <tr>
+        <td class="cell">Name property</td>
+        <td class="cell">Description</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of rows">
+      <td class="cell">@Input() {{row.inputName}}: <span class="input-green" [innerHTML]="row.inputType"></span></td>
+      <td class="cell" [innerHTML]="row.description"></td>
+    </tr>
+  </tbody>
+</table>

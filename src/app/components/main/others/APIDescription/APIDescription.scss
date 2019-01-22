@@ -1,0 +1,24 @@
+:host {
+
+}
+.api-table {
+  border: 1px solid #333;
+  border-spacing: unset;
+  margin-top: 60px;
+  thead td {
+    border-bottom: 1px solid #333;
+  }
+}
+.cell {
+  padding: 20px;
+  border-bottom: 1px solid #333;
+}
+.cell:first-child {
+  border-right: 1px solid #333;
+}
+.cell:last-child {
+  width: 600px;
+}
+.input-green {
+  color: green;
+}
