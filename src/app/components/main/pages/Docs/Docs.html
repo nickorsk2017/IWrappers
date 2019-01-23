@@ -1,13 +1,14 @@
 
 <div class="docs">
   <div class="docs-left">
+    <a routerLink="/home" class="logo-container"><img class="logo" draggable="false" src="assets/logo.png"></a>
     <a class="menu-item" routerLink="/docs">Getting started</a>
     <a class="menu-item" [routerLink]="[{outlets:{doc:['resizable']}}]">Resizable wrapper</a>
-    <a class="menu-item">Movable wrapper</a>
-    <a class="menu-item">DnD wrapper</a>
+    <a class="menu-item" [routerLink]="[{outlets:{doc:['movable']}}]">Movable wrapper</a>
+    <a class="menu-item" [routerLink]="[{outlets:{doc:['dnd']}}]">DnD wrapper</a>
     <a class="menu-item" routerLink="/demo">Demo</a>
   </div>
-  <div class="docs-right">
-    <router-outlet name="doc"></router-outlet>
+  <div #docsRight class="docs-right">
+    <router-outlet (activate)="onActivate($event)" name="doc"></router-outlet>
   </div>
 </div>

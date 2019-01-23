@@ -43,7 +43,18 @@ export class Resizable {
         width: <span class="green">number</span>;
         height: <span class="green">number</span>;
       }</pre><br><br>
-      Sets callback function. Runs after initialize of size of wrapper. Return SizeWrapper ar attributes.
+      Callback function. Runs after initialize of size of wrapper. Return the size in attributes.
+      `,
+      inputType: `(size: SizeWrapper) => void`
+    },
+    {
+      inputName: 'onResize',
+      description: `Where type of SizeWrapper: <pre>
+      {
+        width: <span class="green">number</span>;
+        height: <span class="green">number</span>;
+      }</pre><br><br>
+      Callback function. Runs after resize of wrapper. Return the size in attributes.
       `,
       inputType: `(size: SizeWrapper) => void`
     },

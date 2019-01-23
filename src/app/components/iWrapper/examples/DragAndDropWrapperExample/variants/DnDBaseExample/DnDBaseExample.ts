@@ -38,7 +38,6 @@ export class DnDBaseExample {
       return item.id !== _item.id;
     });
     this.leftBlockItems.push(item);
-    console.log(item, 'data');
   }
   onDropRight(item: any) {
     this.leftBlockItems = this.leftBlockItems.filter((_item) => {

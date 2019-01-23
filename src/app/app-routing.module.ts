@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {Home, Demo, Docs, Resizable, About} from '../app/components/index';
+import {Home, Demo, Docs, Resizable, Movable, DnD, About} from '../app/components/index';
 
 const routes: Routes = [
   {
@@ -19,9 +19,19 @@ const routes: Routes = [
         component: About
       },
       {
+        path: 'dnd',
+        outlet: 'doc',
+        component: DnD
+      },
+      {
         path: 'resizable',
         outlet: 'doc',
         component: Resizable
+      },
+      {
+        path: 'movable',
+        outlet: 'doc',
+        component: Movable
       },
     ]
   },

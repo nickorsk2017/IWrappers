@@ -1,6 +1,11 @@
 import { Input, Component, ChangeDetectionStrategy, HostListener, ElementRef } from '@angular/core';
 import {iWrapperService} from '../../services';
 
+interface Position {
+  left: number;
+  top: number;
+}
+
 @Component({
   selector: 'movable-wrapper',
   templateUrl: 'MovableWrapper.html',
@@ -9,7 +14,7 @@ import {iWrapperService} from '../../services';
 })
 export class MovableWrapper {
   handlers = [];
-  @Input() startPosition: {left: number, top: number} | null = {top: 0, left: 0};
+  @Input() startPosition: Position | null = {top: 0, left: 0};
   @Input() protectorElement?: HTMLElement = document.body;
   positionBeforeMoved: any = {top: 0, left: 0};
   deltaPositionOfMouse: any = {

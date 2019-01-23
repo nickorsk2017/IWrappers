@@ -3,5 +3,7 @@ export {Home} from './main/pages/Home/Home';
 export {Docs} from './main/pages/Docs/Docs';
 export {App} from './main/App/App';
 export {Resizable} from './main/pages/Resizable/Resizable';
+export {Movable} from './main/pages/Movable/Movable';
+export {DnD} from './main/pages/DnD/DnD';
 export {About} from './main/pages/About/About';
 export {APIDescription} from './main/others/APIDescription/APIDescription';
