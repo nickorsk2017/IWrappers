@@ -1,19 +1,12 @@
 {
   "name": "angular-i-wrappers",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Stepanov Nickolay",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve --open",
-    "build": "ng build --prod --output-path docs --base-href 'https://nickorsk2017.github.io/IWrappers/'",
-    "deploy": "ngh --dir='docs'"
-  },
+  "scripts": {},
   "license": "MIT",
   "keywords": [
     "angular",
-    "angular 6",
     "angular 7",
-    "angular6",
     "angular7",
     "drag and drop",
     "drag and drop angular",

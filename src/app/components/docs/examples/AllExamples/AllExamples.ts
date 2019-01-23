@@ -1,14 +1,13 @@
 import { Input, Component, ChangeDetectionStrategy, HostListener, ElementRef } from '@angular/core';
-import {} from '../../services';
 
 @Component({
-  selector: 'resizable-wrapper-example',
-  templateUrl: 'ResizableWrapperExample.html',
-  styleUrls: ['./ResizableWrapperExample.scss'],
+  selector: 'all-example',
+  templateUrl: 'AllExamples.html',
+  styleUrls: ['./AllExamples.scss'],
 })
-export class ResizableWrapperExample {
-  typeExample = 'simpleExamples';
-  examples = ['simpleExamples', 'frames'];
+export class AllExamples {
+  typeExample = 'DragAndDrop';
+  examples = ['DragAndDrop', 'Movable', 'Resizable'];
   constructor() {
     this.bindAll();
   }

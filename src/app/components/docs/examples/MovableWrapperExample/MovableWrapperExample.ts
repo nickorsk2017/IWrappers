@@ -1,5 +1,4 @@
 import { Input, Component, ChangeDetectionStrategy, HostListener, ElementRef } from '@angular/core';
-import {} from '../../services';
 
 @Component({
   selector: 'movable-wrapper-example',

@@ -153,7 +153,6 @@ export class MovableWrapper {
           this.hostElement.nativeElement.style.left = `${0}px`;
         } else {
           const borderWidth = this.getBordersWidth(this.protectorElement);
-          console.log(borderWidth, 'borderWidth');
           this.hostElement.nativeElement.style.left = `${protectorLeft + this.protectorElement.offsetWidth -
             this.hostElement.nativeElement.offsetWidth - borderWidth.borderLeft - borderWidth.borderRight}px`;
         }

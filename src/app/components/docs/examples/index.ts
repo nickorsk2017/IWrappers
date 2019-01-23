@@ -5,6 +5,7 @@ export {ResizableWrapperExample} from './ResizableWrapperExample/ResizableWrappe
 export {ResizableExamples} from './ResizableWrapperExample/variants/ResizableExamples/ResizableExamples';
 export {ResizablePanelsExample} from './ResizableWrapperExample/variants/ResizablePanelsExample/ResizablePanelsExample';
 export {AllExamples} from './AllExamples/AllExamples';
-export { DragAndDropWrapperExample } from './DragAndDropWrapperExample/DragAndDropWrapperExample';
+export {DragAndDropWrapperExample} from './DragAndDropWrapperExample/DragAndDropWrapperExample';
 export {ExampleDnDChild} from './DragAndDropWrapperExample/components/ExampleDnDChild/ExampleDnDChild';
+export {GhostExample} from './GhostExample/GhostExample';
 export {DnDBaseExample} from './DragAndDropWrapperExample/variants/DnDBaseExample/DnDBaseExample';
