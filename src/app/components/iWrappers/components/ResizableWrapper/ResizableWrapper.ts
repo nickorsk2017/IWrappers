@@ -18,7 +18,7 @@ interface Size {
 @Component({
   selector: 'resizable-wrapper',
   templateUrl: 'ResizableWrapper.html',
-  styleUrls: ['./ResizableWrapper.scss'],
+  styleUrls: ['./ResizableWrapper.css'],
 })
 export class ResizableWrapper {
   sizeBeforeResized: SizeWrapper = {height: 0, width: 0};

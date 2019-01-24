@@ -1,4 +1,4 @@
-import { Input, Component, ChangeDetectionStrategy, HostListener, ElementRef } from '@angular/core';
+import { Input, Component, HostListener, ElementRef } from '@angular/core';
 import {iWrapperService} from '../../services';
 
 interface Position {
@@ -9,8 +9,7 @@ interface Position {
 @Component({
   selector: 'movable-wrapper',
   templateUrl: 'MovableWrapper.html',
-  styleUrls: ['./MovableWrapper.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrls: ['./MovableWrapper.css']
 })
 export class MovableWrapper {
   handlers = [];

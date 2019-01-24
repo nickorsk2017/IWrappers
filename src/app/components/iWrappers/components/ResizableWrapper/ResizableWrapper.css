@@ -12,9 +12,9 @@
   top: -3px;
   left: 0;
   cursor: row-resize;
-  &.visibleResizePoints {
-    background: #000;
-  }
+}
+.border-resize-top.visibleResizePoints {
+  background: #000;
 }
 .border-resize-bottom {
   width: 100%;
@@ -23,9 +23,9 @@
   bottom: -3px;
   left: 0;
   cursor: row-resize;
-  &.visibleResizePoints {
-    background: #000;
-  }
+}
+.border-resize-bottom.visibleResizePoints {
+  background: #000;
 }
 .border-resize-left {
   height: 100%;
@@ -34,9 +34,9 @@
   left: -3px;
   top: 0;
   cursor: col-resize;
-  &.visibleResizePoints {
-    background: #000;
-  }
+}
+.border-resize-left.visibleResizePoints {
+  background: #000;
 }
 .border-resize-right {
   height: 100%;
@@ -45,9 +45,9 @@
   right: -3px;
   top: 0;
   cursor: col-resize;
-  &.visibleResizePoints {
-    background: #000;
-  }
+}
+.border-resize-right.visibleResizePoints {
+  background: #000;
 }
 .border-resize-top-left {
   position: absolute;
@@ -56,9 +56,9 @@
   width: 10px;
   height: 10px;
   cursor: nwse-resize;
-  &.visibleResizePoints {
-    background: #000;
-  }
+}
+.border-resize-top-left.visibleResizePoints {
+  background: #000;
 }
 .border-resize-top-right {
   position: absolute;
@@ -67,9 +67,9 @@
   width: 10px;
   height: 10px;
   cursor: nesw-resize;
-  &.visibleResizePoints {
-    background: #000;
-  }
+}
+.border-resize-top-right.visibleResizePoints {
+  background: #000;
 }
 .border-resize-bottom-left {
   position: absolute;
@@ -78,9 +78,9 @@
   width: 10px;
   height: 10px;
   cursor: nesw-resize;
-  &.visibleResizePoints {
-    background: #000;
-  }
+}
+.border-resize-bottom-left.visibleResizePoints {
+  background: #000;
 }
 .border-resize-bottom-right {
   position: absolute;
@@ -89,7 +89,7 @@
   width: 10px;
   height: 10px;
   cursor: nwse-resize;
-  &.visibleResizePoints {
-    background: #000;
-  }
+}
+.border-resize-bottom-right.visibleResizePoints {
+  background: #000;
 }

@@ -4,7 +4,7 @@ import { iWrapperService } from '../../services';
 @Component({
   selector: 'dnd-wrapper',
   templateUrl: 'DnDWrapper.html',
-  styleUrls: ['./DnDWrapper.scss'],
+  styleUrls: ['./DnDWrapper.css'],
 })
 export class DnDWrapper {
   isEnter: Boolean = false;

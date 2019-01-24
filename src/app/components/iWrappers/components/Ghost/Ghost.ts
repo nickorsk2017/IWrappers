@@ -3,7 +3,7 @@ import { Input, Component, ChangeDetectionStrategy, HostListener, ElementRef } f
 @Component({
   selector: 'ghost',
   templateUrl: 'Ghost.html',
-  styleUrls: ['./Ghost.scss'],
+  styleUrls: ['./Ghost.css'],
 })
 export class Ghost {
   constructor() {

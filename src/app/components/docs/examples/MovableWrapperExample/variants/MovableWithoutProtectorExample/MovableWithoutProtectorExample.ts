@@ -1,4 +1,4 @@
-import { Input, Component, ChangeDetectionStrategy, HostListener, ElementRef } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'movable-without-protector-example',
@@ -6,9 +6,5 @@ import { Input, Component, ChangeDetectionStrategy, HostListener, ElementRef } f
   styleUrls: ['./MovableWithoutProtectorExample.scss'],
 })
 export class MovableWithoutProtectorExample {
-  constructor() {
-    this.bindAll();
-  }
-  bindAll() {}
-  ngAfterViewInit() {}
+  constructor() {}
 }
