@@ -1,5 +1,5 @@
 import { Input, Component, HostListener, ElementRef } from '@angular/core';
-import {iWrapperService} from '../../services';
+import { iWrapperService } from '../../services/iWrapperService';
 
 interface Position {
   left: number;

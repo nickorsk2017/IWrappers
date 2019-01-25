@@ -1,5 +1,5 @@
 import { Input, Component, ChangeDetectionStrategy, HostListener, ElementRef } from '@angular/core';
-import { iWrapperService } from '../../services';
+import { iWrapperService } from '../../services/iWrapperService';
 
 @Component({
   selector: 'dnd-wrapper',

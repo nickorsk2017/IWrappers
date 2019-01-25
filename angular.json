@@ -106,27 +106,34 @@
         }
       }
     },
-    "iWrapper-e2e": {
-      "root": "e2e/",
-      "projectType": "application",
-      "prefix": "",
+    "angular-i-wrappers": {
+      "root": "projects/angular-i-wrappers",
+      "sourceRoot": "projects/angular-i-wrappers/src",
+      "projectType": "library",
+      "prefix": "iwp",
       "architect": {
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "iWrapper:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "iWrapper:serve:production"
-            }
+            "tsConfig": "projects/angular-i-wrappers/tsconfig.lib.json",
+            "project": "projects/angular-i-wrappers/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-i-wrappers/src/test.ts",
+            "tsConfig": "projects/angular-i-wrappers/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-i-wrappers/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": "e2e/tsconfig.e2e.json",
+            "tsConfig": [
+              "projects/angular-i-wrappers/tsconfig.lib.json",
+              "projects/angular-i-wrappers/tsconfig.spec.json"
+            ],
             "exclude": [
               "**/node_modules/**"
             ]

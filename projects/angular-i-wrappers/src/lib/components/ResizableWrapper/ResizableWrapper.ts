@@ -1,5 +1,5 @@
 import { Input, Component, ChangeDetectionStrategy, HostListener, ElementRef } from '@angular/core';
-import {iWrapperService} from '../../services';
+import { iWrapperService } from '../../services/iWrapperService';
 
 type Direction = 'top' | 'bottom' | 'left' | 'right' | 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right' | 'all';
 interface SizeWrapper {

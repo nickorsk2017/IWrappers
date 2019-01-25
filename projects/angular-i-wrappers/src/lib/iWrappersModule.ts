@@ -1,14 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import {
-  MovableWrapper,
-  ResizableWrapper,
-  DnDWrapper,
-  Ghost
-} from './components';
+import { BrowserModule } from '@angular/platform-browser';
+import {MovableWrapper} from './components/MovableWrapper/MovableWrapper';
+import {ResizableWrapper} from './components/ResizableWrapper/ResizableWrapper';
+import {DnDWrapper} from './components/DnDWrapper/DnDWrapper';
+import {Ghost} from './components/Ghost/Ghost';
 // services
-import {iWrapperService} from './services';
+import {iWrapperService} from './services/iWrapperService';
 
 @NgModule({
   declarations: [
@@ -18,8 +15,7 @@ import {iWrapperService} from './services';
     Ghost,
   ],
   imports: [
-    BrowserModule,
-    RouterModule
+    BrowserModule
   ],
   exports: [
     MovableWrapper,

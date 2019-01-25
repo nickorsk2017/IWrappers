@@ -1,1 +1,0 @@
-export {iWrapperService} from './iWrapperService';

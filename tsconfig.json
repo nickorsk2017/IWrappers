@@ -18,7 +18,27 @@
       "es6",
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "iwrappers": [
+        "dist/iwrappers"
+      ],
+      "iwrappers/*": [
+        "dist/iwrappers/*"
+      ],
+      "iwrappers-lib": [
+        "dist/iwrappers-lib"
+      ],
+      "iwrappers-lib/*": [
+        "dist/iwrappers-lib/*"
+      ],
+      "angular-i-wrappers": [
+        "dist/angular-i-wrappers"
+      ],
+      "angular-i-wrappers/*": [
+        "dist/angular-i-wrappers/*"
+      ]
+    }
   },
   "exclude": [
     "typings/browser.d.ts",
