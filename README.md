@@ -1,4 +1,4 @@
-<h1>Getting started</h1>
+<h1>About</h1>
 IWrappers is the library for creating a modern UI, similar to a desktop OS. You can create stretchable, draggable, dropped elements of interface.
 For example, it can be windows, chats, panels, and other.<br>
 All components have flexible settings that can be customized.<br><br>
