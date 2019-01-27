@@ -5,3 +5,4 @@ export {Resizable} from './Resizable/Resizable';
 export {Movable} from './Movable/Movable';
 export {DnD} from './DnD/DnD';
 export {About} from './About/About';
+export {License} from './License/License';

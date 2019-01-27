@@ -7,6 +7,8 @@
     <a class="menu-item" [routerLink]="[{outlets:{doc:['movable']}}]">Movable wrapper</a>
     <a class="menu-item" [routerLink]="[{outlets:{doc:['dnd']}}]">DnD wrapper</a>
     <a class="menu-item" routerLink="/demo">Demo</a>
+    <a class="menu-item" href="https://github.com/nickorsk2017/IWrappers">Git</a>
+    <a class="menu-item" [routerLink]="[{outlets:{doc:['license']}}]">License</a>
   </div>
   <div #docsRight class="docs-right">
     <router-outlet (activate)="onActivate($event)" name="doc"></router-outlet>

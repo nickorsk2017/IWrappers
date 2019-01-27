@@ -12,6 +12,7 @@ import {
   Movable,
   DnD,
   About,
+  License
 } from './components/docs/pages';
 import {
   MovableWithProtectorExample,
@@ -31,7 +32,7 @@ import {
   PanelOfVariants
 } from './components/docs/others';
 import { HttpClientModule } from '@angular/common/http';
-import {iWrappersModule} from '../../dist/iwrappers';
+import {iWrappersModule} from 'angular-i-wrappers';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import {iWrappersModule} from '../../dist/iwrappers';
     Movable,
     DnD,
     About,
+    License,
     APIDescription,
     PanelOfVariants,
     MovableWithProtectorExample,

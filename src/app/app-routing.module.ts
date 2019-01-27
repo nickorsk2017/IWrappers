@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {Home, Demo, Docs, Resizable, Movable, DnD, About} from './components/docs/pages';
+import {Home, Demo, Docs, Resizable, Movable, DnD, About, License} from './components/docs/pages';
 
 const routes: Routes = [
   {
@@ -32,6 +32,11 @@ const routes: Routes = [
         path: 'movable',
         outlet: 'doc',
         component: Movable
+      },
+      {
+        path: 'license',
+        outlet: 'doc',
+        component: License
       },
     ]
   },
