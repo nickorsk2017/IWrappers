@@ -32,7 +32,7 @@ import {
   PanelOfVariants
 } from './components/docs/others';
 import { HttpClientModule } from '@angular/common/http';
-import {iWrappersModule} from 'angular-i-wrappers';
+import {iWrappersModule} from '../../projects/angular-i-wrappers/src/lib/iWrappersModule';
 
 @NgModule({
   declarations: [

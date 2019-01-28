@@ -70,7 +70,7 @@ export class iWrapperService {
       this.handlers.forEach((handlerItem) => {
         if (parameters.typeHandler === handlerItem.typeHandler) {
           const response: any = {
-            event
+            event: parameters.event
           };
           if (parameters.data) {
             response.data = parameters.data;
