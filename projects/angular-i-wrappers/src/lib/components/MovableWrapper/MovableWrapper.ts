@@ -50,9 +50,11 @@ export class MovableWrapper {
   }
   unsubscribeToMoveEvent() {
     this.wrapperService.off(this.onMouseMove);
+    this.wrapperService.enableSelection();
     this.resetStartPosition();
   }
   onMouseMove(dataHandler) {
+    this.wrapperService.disableSelection();
     this.moveWrapper(dataHandler.event);
   }
   // ======= Events, subscribes[END]. =======

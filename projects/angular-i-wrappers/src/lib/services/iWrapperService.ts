@@ -94,10 +94,12 @@ export class iWrapperService {
     };
   }
   enableSelection() {
-    document.body.style.userSelect = 'all';
+    document.body.style.userSelect = 'auto';
+    document.body.style.webkitUserSelect = 'auto';
   }
   disableSelection() {
     document.body.style.userSelect = 'none';
+    document.body.style.webkitUserSelect = 'none';
   }
   setCursor(cursorName: 'row-resize' | 'col-resize' | 'nwse-resize' | 'nesw-resize') {
     document.body.style.cursor = cursorName;
